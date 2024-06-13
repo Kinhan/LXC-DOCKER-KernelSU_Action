@@ -1,4 +1,4 @@
-name: 低端机 谷歌clang12.0.5
+name: 低端机 谷歌clang12.0.5-self
 on:
   workflow_dispatch:
 
