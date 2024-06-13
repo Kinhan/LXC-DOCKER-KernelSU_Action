@@ -128,7 +128,6 @@ jobs:
       run: |
         cd $GITHUB_WORKSPACE/kernel_workspace
         tools/unpack_bootimg.py --boot_img boot-source.img
-        https://raw.githubusercontent.com/Kinhan/lxc-docker-kernelsu_action/main/magisk_patched-27000_32okE.img
         cp android-kernel/out/arch/arm64/boot/Image.gz-dtb out/kernel
         tools/mkbootimg.py ${{ env.FORMAT_MKBOOTING }} -o boot.img
         if [ -f boot.img ]; then
